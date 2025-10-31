@@ -1,0 +1,159 @@
+.home-container {
+  min-height: calc(100vh - 60px);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.brand {
+  color: #fbbf24;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.hero-description {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-large {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.features-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #111827;
+  margin-bottom: 50px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.info-section {
+  background-color: #f9fafb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 36px;
+  color: #111827;
+  margin-bottom: 40px;
+}
+
+.features-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 18px;
+}
+
+.features-list li {
+  padding: 12px 0;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.features-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .features-section h2,
+  .info-section h2 {
+    font-size: 28px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-large {
+    width: 100%;
+    max-width: 300px;
+  }
+}

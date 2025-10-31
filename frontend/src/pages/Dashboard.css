@@ -1,0 +1,129 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 32px;
+  color: #111827;
+}
+
+.events-section {
+  margin-top: 30px;
+}
+
+.events-section h2 {
+  font-size: 24px;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.event-header h3 {
+  font-size: 20px;
+  color: #111827;
+  margin: 0;
+  flex: 1;
+}
+
+.event-description {
+  color: #6b7280;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.event-time {
+  background-color: #f9fafb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.event-time div {
+  margin: 5px 0;
+}
+
+.event-location {
+  color: #4b5563;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.event-duration {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.event-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.info-text {
+  color: #9ca3af;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
